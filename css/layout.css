@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*@import "header.css";*/
+@import "navbar.css";
+@import "main.css";
+@import "profile.css";
+@import "vanillaCalendar.css";
+
+
+
+:root{
+    --dashboard-title: 2rem;
+    --violet-theme: #ae71f5;
+    --vcal-bg-color: #fff;
+    --vcal-border-radius: 10px;
+    --vcal-border-color: #e7e9ed;
+    --vcal-today-bg-color: #10989E;
+    --vcal-today-color: #fff;
+    --vcal-selected-bg-color: #E7E9ED;
+    --vcal-selected-color: #333;
+}
+
+*,
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: Poppins, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: royalblue;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 2.5vw;
+    color: var(--vcal-selected-color);
+}
+
+/*h2{*/
+/*    font-size: 2vw;*/
+/*}*/
+
+input:focus{
+    outline: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    margin: 15px;
+    min-height: 100vh;
+    /*grid-template-areas: "navbar main main main main main profile profile profile";*/
+    grid-template-columns: 0.8fr 2.5fr 1fr;
+    gap: 5px;
+    font-size: 1.4rem;
+}
+
+.dashboard-title{
+    font-size: var(--dashboard-title);
+}
+
+.grid{
+    display: grid;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.br-10{
+    border-radius: 10px;
+}
+
+.hide{
+    display: none;
+}

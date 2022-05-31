@@ -1,0 +1,186 @@
+
+.profile{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile__head{
+    padding: 20px 15px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile__head-titr{
+    justify-content: space-between;
+}
+
+.profile__edit img{
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.profile__avatar{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile__avatar-pic img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.profile__avatar-titr{
+    align-items: center;
+    gap: 5px;
+}
+
+.profile__avatar-titr p{
+    font-size: 16px;
+}
+
+.profile__avatar-titr>i{
+    padding: 3px 4px ;
+    color: white;
+    font-size: 9px;
+    background-color: #64b4ce;
+    border-radius: 50%;
+}
+
+.profile__homework{
+    padding: 0 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.progress {
+    width: 50px;
+    height: 50px;
+    background: #fefcff;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+    cursor: pointer;
+}
+
+.progressbar-percent,
+.fill {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.progressbar-percent {
+    clip: rect(0px, 50px, 50px, 25px);
+}
+
+.percent-text {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e51dc;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.fill {
+    clip: rect(0px, 25px, 50px, 0px);
+    background-color: #227ded;
+}
+
+
+@keyframes fill-progressbar1{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes fill-progressbar2{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+@keyframes fill-progressbar3{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+
+.progressbar1 .full,
+.progressbar1 .fill{
+    animation: fill-progressbar1 ease-in-out 3s;
+    transform: rotate(90deg);
+}
+
+
+.progressbar2 .full,
+.progressbar2 .fill{
+    animation: fill-progressbar2 ease-in-out 3s;
+    transform: rotate(120deg);
+}
+
+.progressbar3 .full,
+.progressbar3 .fill{
+    animation: fill-progressbar3 ease-in-out 3s;
+    transform: rotate(45deg);
+}
+
+.homework-item{
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.homework-item:hover{
+    background: linear-gradient(to left, var(--violet-theme), #eeeeee);
+    transition: all 0.5s ease;
+}
+
+.homework-active{
+    background-color: var(--violet-theme);
+    color: white;
+    transition: background-color 0.6s linear;
+}
+
+
+.homework-item>*:last-child{
+    justify-self: end;
+    font-size: 1.5rem;
+}
+
+.homework-text p{
+    font-size: 15px;
+}
+
+.homework-text span{
+    opacity: 0.6;
+    font-weight: 600;
+}
+
