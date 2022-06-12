@@ -21,4 +21,4 @@ Go to [Demo](https://mahsadp.github.io/Academy/) page
 ![Study Web Dashboard](https://user-images.githubusercontent.com/100931501/173243048-50b68b9f-57a6-4ef5-9b86-dceecfd8d17e.jpeg)
 
 ## Contact me
-[mahsaa.emadi@gmail.com](mahsaa.emadi@gmail.com)
+mahsaa.emadi@gmail.com <a href="mailto:mahsaa.emadi@gmail.com?"></a>
